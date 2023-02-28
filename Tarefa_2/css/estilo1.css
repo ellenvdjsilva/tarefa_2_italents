@@ -1,0 +1,77 @@
+/*Estilização dos formularios*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(68, 68, 146);
+}
+
+#cc-1, .c-login{
+    background-color: aquamarine;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    padding: 20px 30px;
+    margin-top: 10vh;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* formulário */
+
+form {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+  
+label, input {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+  
+label {
+    font-weight: bold;
+    font-size: .9rem;
+}
+  
+input {
+    border: 2px solid rgb(3, 3, 78);
+    border-radius: 2rem;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+  
+input:focus {
+    border: 3px solid #f63cfc;
+}
+  
+button{
+    border: 1px solid rgb(27, 27, 27);
+    border-radius: 2rem;
+    padding: 5px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 2px wheat;
+}
+
+button:hover{
+    background-color: rgb(228, 248, 246);
+    border: 2px solid rgba(33, 34, 34, 0.582);
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px wheat;
+    font-family: color black
+    
+}
+
+/*logo da empresa tela-de-login*/
+
+#logo{
+    max-width:150px;
+    max-height:100px;
+    width: auto;
+    height: auto;
+}

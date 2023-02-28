@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Racing+Sans+One&display=swap');
+
+*{
+    font-family: 'Lobster', Arial, Helvetica;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    min-height: 100vh;
+    /*unidade de vh a altura do viewport
+    definindo o valor min de altira com base na tela do 
+    usuario*/
+    background-color: rgb(230, 242, 253);
+}
+:root{
+    --background-clean: rgb(20, 116, 107);
+    --cor-de-empresa: rgb(214, 172, 219); 
+}
+
+/*Estilização do Cabeçalho*/
+
+.Cabeçalho{
+  width: 100%;
+  background-image: url(/img/fc2.png);  
+}
+
+.Navegador{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.Navegador, .menu{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu li{
+    list-style: none;
+    padding: 2rem;
+    color: rgb(0, 0, 0);
+}
+
+.bi-person-circle{
+    font-size: 40px;
+    color: var(--background-clean);
+}
+
+ul li#locaicon{
+    display: flex;
+    padding-right: 0;
+    padding-left: 5rem;
+    margin-right: .8rem;
+    align-items: center;
+}
+
+.bi-geo-alt-fill{
+    font-size: 40px;
+    color: var(--background-clean);
+}
+
+.localização{
+    font-size: 15px;
+    padding-left: 0;
+    padding-right: 5rem;
+}
+
+.bi-image{
+    font-size: 40px;
+    color: var(--background-clean);
+}
+
+/*Estilização do Rodapé*/
+
+.rodape{
+    background-color: rgb(213, 231, 247);
+    margin-top: 5rem;
+
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.cards a{
+    text-decoration: none;
+    text-align: center;
+    color: rgb(0, 0, 0);
+
+}
+
+.card{
+    margin: .5rem;
+    list-style: none;
+}
+
+.bi-house-fill{
+    font-size: 60px;
+    color: var(--background-clean);
+}
+
+.bi-person-add{
+    font-size: 60px;
+    color: var(--background-clean);
+}
+
+.bi-upc-scan{
+    font-size: 60px;
+    color: var(--background-clean);
+}
+
+.bi-cart-plus-fill{
+    font-size: 60px;
+    color: var(--background-clean);
+}
+
+.bi-stickies-fill{
+    font-size: 60px;
+    color: var(--background-clean);
+}
+
+/* Estilização conteudo*/
+
+section#mens-inicio{
+    padding: 2rem;
+    background-color: rgb(213, 231, 247);
+}
+
+#nome-emp{
+    font-style: bold;
+    font-size: 50px;
+    margin-bottom: .5rem;
+    color: var(--background-clean);
+}
+
+.tex-1{
+    color: rgb(60, 54, 68);
+    font-size: 25px;
+}
+
+/* estilização de seção de c1*/
+
+.c1{
+    display: flex;
+    padding-top: .5rem;
+    width: auto;
+    align-items: center;
+}
+
+.bi-search{
+    position: absolute;
+    color: var(--background-clean);
+    padding-top: .2rem;
+    padding-left: 4rem;
+    font-size: 40px;
+}
+
+#in-1{
+    width: 90%;
+    margin: auto;
+    font-size: 25px;
+    padding: 1.2rem 0 1.2rem;
+    padding-left: 2rem;
+    border: 1.5mm ridge var(--background-clean);
+    text-align: center;
+    background-color: rgb(230, 242, 253);
+}
+
+input:focus{
+    outline: 0;
+}
+
+input[type=text]{
+    color: rgb(102, 42, 104);
+}
+
+/*Estilização de section c2*/
+.c2{
+    display: flex;
+    
+}
+
+#c-ul{
+    display: flex;
+    justify-content: center;
+}
+
+.a-li{
+    margin: 3rem 5rem;
+    text-decoration: none;
+    justify-content: center;
+}
+
+
+.c-li{
+    margin: auto;
+    justify-content: center;
+    color: rgba(29, 27, 27, 0.712);
+    list-style: none;
+    border: solid 1px var(--background-clean);
+    border-radius: 2rem;
+    width: 80%;
+    padding: 2rem;
+    margin: 1.2rem;
+    font-weight: 300;
+    text-align: center;
+    transition: transform 0.6s ease-in-out;
+    transition: box-shadow 0.2s;
+}
+
+.c-li:hover{
+    background-color: rgb(170, 219, 248);
+    border: 5px solid rgba(25, 3, 51, 0.582);
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px black;
+}
+
+/* estilização de seção de c3*/
+.c3{
+    display: flex;
+}
+
+.P-f{
+    display: block;
+    margin: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 5px 15px black;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    align-content: center;
+    background-color: rgba(225, 226, 226, 0.89);
+}
+
+.P-f:hover{
+    background-color: white;
+    box-shadow: inset 50px 0 0 0;
+    color: white;
+}
+
+.P-f img{
+    display: block;
+    width: 70%;
+    margin: auto;
+    justify-content: center;
+}
+
+.n-p{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: 20px;    
+    color: var(--background-clean);
+    margin-bottom: 1.3rem;
+    margin-top: .2rem;
+}
+
+/*estlização ver mais*/
+
+div#ver-mais{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2rem;
+    margin-bottom: 2rem; 
+}
+
+div#ver-mais a{
+    color: gray;
+    text-decoration: none;
+    margin: .8rem 2rem;
+
+}
+
+/* estilização de seção de c3*/
+.c4{
+    text-align: center;
+    border: .2rem outset var(--background-clean);
+    outline: .1rem solid rgba(245, 158, 242, 0.897);
+    box-shadow: 0 0 0 1rem var(--background-clean);
+    border-radius: 12px;
+    margin: 2rem;
+    padding: 1rem;
+    width: 50%;
+    margin: auto;
+    font: bold 1rem sans-serif;
+}
+
+#t-a{
+    font-size: 40px;
+    color: blueviolet;
+    text-shadow: 2px 2px rgb(171, 237, 240);
+}
+
+.bi-hand-thumbs-up-fill{
+    font-size: 40px;
+    color: blueviolet;
+    text-shadow: 2px 2px rgb(171, 237, 240);
+}
+.bi-hand-thumbs-down-fill{
+    font-size: 40px;
+    color: blueviolet;
+    text-shadow: 2px 2px rgb(171, 237, 240);
+
+}
+
+#f-a{
+    font-size: 30px;
+    color: blueviolet;
+    padding: 1.2rem;
+}
+
+
+/*usando queries para 
+deixar a tela acessivel */
+
+@media screen and (max-width: 480px){
+    body{
+        width: 100%;
+    }
+    header{
+        display: flex;
+    }
+
+    i.bi-geo-alt-fill, .localização, .bi-image{
+        display: none;
+    }
+
+    ul.cards{
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .cards a{
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width: 480px){
+    body{
+        width: 100%;
+    }
+    i.bi-search{
+        position: absolute;
+        margin-right: 3rem;
+        padding-left: 2rem;
+    }
+
+    #c-ul{
+        flex-wrap: wrap;
+    }
+
+    .c3{
+        flex-wrap: wrap;
+    }
+
+    div.P-f{
+        width: 100%;
+    }
+
+    #f-a{
+        display: none;
+    }
+
+
+
+
+
+
+}
